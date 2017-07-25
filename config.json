@@ -1,0 +1,17 @@
+{
+  "host": "http://office.avkcom.ru:50000",
+  "wait": 1500,
+  "time": 60,
+  "url-list": {
+    "auth": {
+      "url": "/auth/login.html"
+    },
+    "authorize": {
+      "url": "/auth/login-check?login=admin&password=avkcom.ru",
+      "exclude-render": true
+    },
+    "index": {
+      "url": "/"
+    }
+  }
+}

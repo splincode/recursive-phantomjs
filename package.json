@@ -1,0 +1,17 @@
+{
+  "name": "blackbox-server-side-viewpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "phantom-execute.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "devDependencies": {
+    "system-sleep": "^1.3.5"
+  }
+}
