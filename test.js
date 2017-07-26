@@ -29,7 +29,14 @@ function initPage(tasks) {
 
 function makePage(urls, cookie = null) {
     let address = urls.splice(0,1)[0];
-    console.log("[GET]", address);
+  
+    console.log("\n[USAGE MEMORY]");
+    const used = process.memoryUsage();
+    for (let key in used) {
+      console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
+    }
+
+    console.log("\n[GET]", address);
 
     childProcess.execFile(binPath, [ webkitExecutableFile, address, JSON.stringify(cookie || {}) ], (err, stdout, stderr) => {
         let currentCookie = null;
