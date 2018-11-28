@@ -1,5 +1,7 @@
 # Background rendering of pages 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/splincode/recursive-phantomjs.svg)](https://greenkeeper.io/)
+
 ```
 $ npm install
 $ npm test
